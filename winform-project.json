@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "winform-project",
+  "private_key_id": "4a71ed7d82857be83ca8ba6b938ffd5eeeb57e23",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC0484xXA3vlPw7\nGKcJHsb8Z+GdAR5JQ38K3t7tnIsiQLI2r03qAng8ZhD3czN/LN0HE3kbfXYR7uFp\n+S2rB7KHKnG3Hj+EBB9PLAtdHcep+P87lcGnVhD4o12TdyqTMOzaiXQPvGhimvjh\n+J9PBF1E3xmEZf9d9SvTnFGcIrLcRp39ORkgcDdUVy1E+NIoSnM/y0lk0fbof3XO\nmV2iWRupSjNMhydxq9ACDD7+XifM/GWF9jyumrbukq0/rxN23XwUqgbHNJsZrq8+\nomZUbkCtxMLtN7/LmvqnqbycqCBWbnI3zYq9pIioLhKCU24m5i8OOnXtQWK8o3Qj\nJFIeobL9AgMBAAECggEAH9fBTqmaj2wN6dZJYz7efwTHb9TIUNPXq6F3o2LtEDLM\n3HkIMXNNWK6L+o92R4MthoccSOVRUU9YsYfKjQK+H/KuEXL68eGq5ExH1NS+9vIs\n9f+DF1K8ipRxjtnJrh8M9tx/CJ0dUAxhVyAl5SpKw+q1KnwtE8xqsmXgbOijzUg5\n+FzRZznB8CgivxI0vuyaHtv6lkAofE21pcjfr2X9qwFAURgop4Mp92yBQaNB9S/U\ngakP4ERm3Zymks6hUNVB+zjFSaVFES0SDvRvpaImUvWPKwX+RSnUyP7NMCucaQJm\nZR0ITN46HVQb9YXbTJXQNRwgmEBlPiDp/AfTSlXn8QKBgQDtuoVZjkbnAp+MXWii\njc5Sb3BxM953h/24mP5eDoXcRHka+jePwtGpwKSq9kyhqF22XLxHaaC3mk6z8Mfn\ntsUC09nRP1s7YZi9KoxYzpg/2BWC4yeXULb/DpQZ4mVGenvspeRenRkeuko4yNqi\n0dKt4UF/9ctGkQAvbaHkd36rcQKBgQDCyvEs4h0guUEGfbqx449OCx4BoaSZ+mD0\nW2wW5gpmOIWY/lEhEuqPM3E0ZpYVrhX3tK171rPzqwRNHAoDD3NoGzk2NwEYQe07\noc7Xzg7EIEjEwARm60qiez4d/lEP2DwYPV/Oro9JTDWDpY958kdIrobVU/Gbvtvu\n+Ur9niVCTQKBgQDfuhL3VlPZ4nke02W+3a/XmvL6RnNOkNgyGyIAiLBnvLUws10I\n2bMRi7AtCQDTfq07C4lRt9G+GOWKqMaphjNg1tl9+J82gkIJfPp6NWvJYeXUuUyw\nNhESdrjgp1TigDESZIlIlZZnebCSQkyowMkCRSSsdTiqH5pKCGY8qky2sQKBgDjl\nGchoSuWx9mI0+wDWXJcI/Dyxv+gRj5wPz+RoUIVG4Q6syXmFkuk8t0X86L1wWY4+\nQaW4MltrihgTpoD6VFUGDpHdQv6Y0vfl7QpvbzSt0VNWWnLNKsGGicAs9fRQzkyu\nMHun1MYt8jt/cgbGUzfRciSBHkLFXmvQeKzXMj7JAoGAQ6KeThYQReAs5cK0yo5B\ngWRoQLypCxw9cJ+2sbc0Oq1SuUYSIh7ExA4cfPFFbyn4Ej+ioI2YHEE8mKMC0RcZ\nD5z4XYhDxibM0KkrIjUJu2ukCChFH1+1TlGvLTIebaYouj8ANFKl5zoDAf4yeyPy\n9IukGS2uwrcNapzy+RrMzbI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-9w236@winform-project.iam.gserviceaccount.com",
+  "client_id": "101805847513209314684",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-9w236%40winform-project.iam.gserviceaccount.com"
+}
