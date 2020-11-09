@@ -8,12 +8,13 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ScholarshipManagement</RootNamespace>
     <AssemblyName>ScholarshipManagement</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -133,41 +134,23 @@
     <Compile Include="Controls\CirclePictureBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\BothForm.cs">
+    <Compile Include="Forms\ChildForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\BothForm.designer.cs">
-      <DependentUpon>BothForm.cs</DependentUpon>
+    <Compile Include="Forms\ChildForm.Designer.cs">
+      <DependentUpon>ChildForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\FatherForm.cs">
+    <Compile Include="Forms\EventForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\FatherForm.designer.cs">
-      <DependentUpon>FatherForm.cs</DependentUpon>
+    <Compile Include="Forms\EventForm.Designer.cs">
+      <DependentUpon>EventForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\MotherForm.cs">
+    <Compile Include="Forms\ChildrenForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\MotherForm.designer.cs">
-      <DependentUpon>MotherForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\OtherForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ChildFormOfInputInfor\OtherForm.designer.cs">
-      <DependentUpon>OtherForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\EventManagementForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\EventManagementForm.Designer.cs">
-      <DependentUpon>EventManagementForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\ChildrenManagementForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\ChildrenManagementForm.Designer.cs">
-      <DependentUpon>ChildrenManagementForm.cs</DependentUpon>
+    <Compile Include="Forms\ChildrenForm.Designer.cs">
+      <DependentUpon>ChildrenForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\DashboardForm.cs">
       <SubType>Form</SubType>
@@ -175,11 +158,11 @@
     <Compile Include="Forms\DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\StudentInforInputForm.cs">
+    <Compile Include="Forms\AddChildForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\StudentInforInputForm.designer.cs">
-      <DependentUpon>StudentInforInputForm.cs</DependentUpon>
+    <Compile Include="Forms\AddChildForm.designer.cs">
+      <DependentUpon>AddChildForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -187,31 +170,25 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Child.cs" />
+    <Compile Include="Models\EventDetails.cs" />
+    <Compile Include="Models\Event.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\ChildFormOfInputInfor\BothForm.resx">
-      <DependentUpon>BothForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ChildForm.resx">
+      <DependentUpon>ChildForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChildFormOfInputInfor\FatherForm.resx">
-      <DependentUpon>FatherForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EventForm.resx">
+      <DependentUpon>EventForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChildFormOfInputInfor\MotherForm.resx">
-      <DependentUpon>MotherForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChildFormOfInputInfor\OtherForm.resx">
-      <DependentUpon>OtherForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\EventManagementForm.resx">
-      <DependentUpon>EventManagementForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChildrenManagementForm.resx">
-      <DependentUpon>ChildrenManagementForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\ChildrenForm.resx">
+      <DependentUpon>ChildrenForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\StudentInforInputForm.resx">
-      <DependentUpon>StudentInforInputForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\AddChildForm.resx">
+      <DependentUpon>AddChildForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

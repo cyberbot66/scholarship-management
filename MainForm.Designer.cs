@@ -56,7 +56,7 @@
             this.MenuPanel.ForeColor = System.Drawing.Color.White;
             this.MenuPanel.Location = new System.Drawing.Point(0, 0);
             this.MenuPanel.Name = "MenuPanel";
-            this.MenuPanel.Size = new System.Drawing.Size(240, 704);
+            this.MenuPanel.Size = new System.Drawing.Size(240, 884);
             this.MenuPanel.TabIndex = 0;
             // 
             // BudgetManagementButton
@@ -245,14 +245,14 @@
             this.ChildFormPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChildFormPanel.Location = new System.Drawing.Point(240, 70);
             this.ChildFormPanel.Name = "ChildFormPanel";
-            this.ChildFormPanel.Size = new System.Drawing.Size(1024, 634);
+            this.ChildFormPanel.Size = new System.Drawing.Size(1024, 814);
             this.ChildFormPanel.TabIndex = 2;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 704);
+            this.ClientSize = new System.Drawing.Size(1264, 884);
             this.ControlBox = false;
             this.Controls.Add(this.ChildFormPanel);
             this.Controls.Add(this.TitleBarPanel);

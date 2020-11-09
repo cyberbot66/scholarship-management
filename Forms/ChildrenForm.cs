@@ -1,23 +1,22 @@
 ﻿using Google.Cloud.Firestore;
 using ScholarshipManagement.Models;
+using System;
 using System.Windows.Forms;
 
 namespace ScholarshipManagement.Forms
 {
-    public partial class DashboardForm : Form
+    public partial class ChildrenForm : Form
     {
-        readonly FirestoreDb db;
+        private FirestoreDb db;
         private Form currentChildForm;
-        public DashboardForm(FirestoreDb firestore)
+        public ChildrenForm(FirestoreDb firestore)
         {
             InitializeComponent();
             db = firestore;
         }
 
-        private async void DashboardForm_Load(object sender, System.EventArgs e)
+        private void ChildrenForm_Load(object sender, EventArgs e)
         {
-            QuerySnapshot children = await db.Collection("children").GetSnapshotAsync();
-            ChildrenCountLabel.Text = children.Documents.Count.ToString();
             LoadData();
         }
 
@@ -29,10 +28,15 @@ namespace ScholarshipManagement.Forms
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            ChildFormPanel.Controls.Add(childForm);
-            ChildFormPanel.Tag = childForm;
+            ChildrenFormPanel.Controls.Add(childForm);
+            ChildrenFormPanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new AddChildForm(db));
         }
 
         private void AddData(Child child)
@@ -70,11 +74,6 @@ namespace ScholarshipManagement.Forms
                 DocumentSnapshot snapshot = await doc.GetSnapshotAsync();
                 OpenChildForm(new ChildForm(db, snapshot.ConvertTo<Child>()));
             }
-        }
-
-        private void ChildrenManagamentPanel_Click(object sender, System.EventArgs e)
-        {
-            OpenChildForm(new ChildrenForm(db));
         }
     }
 }

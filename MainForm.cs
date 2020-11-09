@@ -26,13 +26,14 @@ namespace ScholarshipManagement
             // Add left border to the menu panel
             leftBorderButton = new Panel { Size = new Size(7, 60) };
             MenuPanel.Controls.Add(leftBorderButton);
-            OpenChildForm(new DashboardForm());
+            
         }
 
         private void MainForm_Load(object sender, EventArgs e)
         {
             Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
             db = FirestoreDb.Create("winform-project");
+            OpenChildForm(new DashboardForm(db));
         }
 
         private void OpenChildForm(Form childForm)
@@ -76,19 +77,19 @@ namespace ScholarshipManagement
         private void HomeButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new DashboardForm());
+            OpenChildForm(new DashboardForm(db));
         }
 
         private void ChildrenManagementButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new ChildrenManagementForm());
+            OpenChildForm(new ChildrenForm(db));
         }
 
         private void BudgetManagementButton_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
-            OpenChildForm(new EventManagementForm());
+            OpenChildForm(new EventForm());
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

@@ -3,17 +3,21 @@ using System.Windows.Forms;
 
 namespace ScholarshipManagement.Forms
 {
-    public partial class ChildrenManagementForm : Form
+    public partial class EventForm : Form
     {
         private Form currentChildForm;
-        public ChildrenManagementForm()
+
+        public EventForm()
         {
             InitializeComponent();
         }
 
         private void OpenChildForm(Form childForm)
         {
-            if (currentChildForm != null) currentChildForm.Close();
+            if (currentChildForm != null)
+            {
+                currentChildForm.Close();
+            }
 
             currentChildForm = childForm;
             childForm.TopLevel = false;
@@ -25,9 +29,9 @@ namespace ScholarshipManagement.Forms
             childForm.Show();
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
+        private void AddProgramButton_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new StudentInforInputForm());
+            //OpenChildForm(new AddEventForm());
         }
     }
 }
