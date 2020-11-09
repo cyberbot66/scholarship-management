@@ -10,16 +10,16 @@ namespace ScholarshipManagement
 {
     public partial class MainForm : Form
     {
-        private readonly string path = AppDomain.CurrentDomain.BaseDirectory + @"winform-project.json";
-        public FirestoreDb db;
-
+        private readonly FirestoreDb db;
         private Form currentChildForm;
         private IconButton currentButton;
         private readonly Panel leftBorderButton;
 
-        public MainForm()
+        public MainForm(FirestoreDb firestore)
         {
             InitializeComponent();
+
+            db = firestore;
 
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
@@ -31,8 +31,7 @@ namespace ScholarshipManagement
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
-            db = FirestoreDb.Create("winform-project");
+            
             OpenChildForm(new DashboardForm(db));
         }
 
